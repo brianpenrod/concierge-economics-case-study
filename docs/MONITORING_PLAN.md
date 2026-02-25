@@ -16,13 +16,16 @@ Detect economics drift early and ensure initiatives improve **customer outcomes*
 ## KPI Table
 | KPI | Definition | Why it matters | Target / Threshold | Cadence | Owner | Data Source |
 |---|---|---|---|---|---|---|
-| Contribution Margin % | (Revenue - Variable Costs) / Revenue | Core profitability | Target: {{X}}% / Alert: <{{Y}}% | Weekly | {{Owner}} | {{Source}} |
-| Variable Cost per Request | Variable costs / completed requests | Unit cost control | Alert: >{{X}} | Weekly | {{Owner}} | {{Source}} |
-| Requests per Active Member | Completed requests / active members | Utilization & value | Target: {{X}} | Weekly | {{Owner}} | {{Source}} |
-| Member Retention (90d) | % retained after 90 days | LTV signal | Alert: <{{X}}% | Monthly | {{Owner}} | {{Source}} |
-| CAC Payback (months) | CAC / monthly contribution margin per member | Growth efficiency | Alert: >{{X}} months | Monthly | {{Owner}} | {{Source}} |
-| NPS / CSAT | Customer sentiment | Outcome quality | Alert: drop >{{X}} pts | Monthly | {{Owner}} | {{Source}} |
-| Fulfillment SLA | % requests met within SLA | Experience | Alert: <{{X}}% | Weekly | {{Owner}} | {{Source}} |
+| Contribution Margin % (Velocity Black) | (Revenue - Variable Costs) / Revenue | Core profitability | Target: **44%** / Alert: **<42%** | Weekly | Finance S&A Lead | Transactions + Member Fees |
+| Contribution Margin % (Capital One Concierge) | (Revenue - Variable Costs) / Revenue | Core profitability | Target: **38%** / Alert: **<36%** | Weekly | Finance S&A Lead | Transactions + Member Fees |
+| Revenue per Request | Total request revenue / completed requests | Margin driver (pricing/partner) | Target: **$14.50** / Alert: **<$13.80** | Weekly | Product Analytics | Transaction ledger |
+| Variable Cost per Request | Variable costs / completed requests | Unit cost control | Target: **$7.70** / Alert: **>$8.20** | Weekly | Ops Analytics | Fulfillment costs |
+| Requests per Active Member (Monthly) | Completed requests / active members | Utilization & value | Target: **2.2** / Alert: **<1.8** | Weekly | Product Analytics | Member + transaction logs |
+| Member Retention (90d) | % retained after 90 days | LTV signal | Target: **92.5%** / Alert: **<91.5%** | Monthly | Growth Analytics | Cohort retention table |
+| CAC Payback (months) | CAC / monthly contribution margin per member | Growth efficiency | Target: **≤12** / Alert: **>15** | Monthly | Growth / Finance | Marketing spend + margin |
+| NPS / CSAT | Customer satisfaction score | Outcome quality | Alert: **drop >5 pts MoM** | Monthly | Customer Experience | Survey platform |
+| Fulfillment SLA (Overall) | % requests met within SLA | Experience health | Target: **92%** / Alert: **<91%** | Weekly | Ops | SLA tracker |
+| Fulfillment SLA (Travel) | % Travel requests met within SLA | Highest-margin, highest-risk area | Target: **92%** / Alert: **<90.5%** | Weekly | Ops | SLA tracker |
 
 ## Monitoring cadence
 - **Weekly:** margin, unit cost, utilization, SLA, alerts summary
