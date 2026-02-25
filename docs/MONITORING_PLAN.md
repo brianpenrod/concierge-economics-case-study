@@ -3,6 +3,16 @@
 ## Goal
 Detect economics drift early and ensure initiatives improve **customer outcomes** and **business value**.
 
+## KPI Targets (Synthetic Baselines + Thresholds)
+- Contribution Margin % (Velocity Black): Target 44% / Alert < 42%
+- Contribution Margin % (Capital One Concierge): Target 38% / Alert < 36%
+- Revenue per Request: Target $14.50 / Alert < $13.80
+- Variable Cost per Request: Target $7.70 / Alert > $8.20
+- Travel SLA: Target 92% / Alert < 90.5%
+- Overall SLA: Target 92% / Alert < 91%
+- Requests per Active Member (monthly): Target 2.2 / Alert < 1.8
+- 90-day Retention: Target 92.5% / Alert < 91.5%
+
 ## KPI Table
 | KPI | Definition | Why it matters | Target / Threshold | Cadence | Owner | Data Source |
 |---|---|---|---|---|---|---|
