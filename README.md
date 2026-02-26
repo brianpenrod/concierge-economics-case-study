@@ -1,45 +1,22 @@
-# Concierge Economics Case Study (Synthetic) — Unit Economics • Scenarios • Monitoring • Executive Narrative
+# Project Concierge: Unit Economic Analysis & Margin Optimization
 
-**Purpose:** Demonstrate how I analyze a service/product business end-to-end:
-**margin drivers → scenarios → monitoring → recommendation**, using shareable synthetic data.
+## Executive Summary
+This repository contains a synthetic case study and quantitative model focused on closing the **600 bps Contribution Margin (CM%) gap** between high-touch digital concierge services (Velocity Black) and traditional banking concierge models (Capital One).
 
-## What’s inside (2–5 minutes)
-- **Notebook 02:** Scenario Model (Base/Upside/Downside) + sensitivity (tornado)
-- **Exec Memo:** 1-page recommendation with options/tradeoffs
-- **Monitoring Plan:** KPI definitions, thresholds, cadence, owners
-- **Data Dictionary:** clear schema for the synthetic dataset
+## Repository Architecture
+* **`data/`**: Synthetic datasets including member profiles and transactional request logs.
+* **`docs/`**: Strategic artifacts including the `EXEC_MEMO.md` and `MONITORING_PLAN.md`.
+* **`notebooks/`**: Step-by-step margin waterfall analysis and stochastic scenario modeling.
+* **`src/`**: Modular Python scripts for data generation and quantitative analysis.
 
-## Key Findings (Synthetic Sample)
-- Velocity Black shows higher contribution margin than Capital One Concierge (~44% vs ~38%); main driver is higher revenue per request ($15.71 vs $13.53) despite slightly higher unit costs.
-- Travel requests have the highest contribution margin (~47%) but the lowest SLA (~89%); biggest opportunity is improving Travel SLA while protecting unit economics.
-- Premium tier has the strongest economics and best 90-day retention (~96–98%); Standard tier retention is lower (~91%). Mix shift and tier migration are high-leverage levers.
-- **Notebook 01:** Margin Waterfall + Drivers (segment/tier breakdown)
-- 
-## Repository structure
-```
-concierge-economics-case-study/
-  data/
-    synthetic/
-      members.csv
-      concierge_transactions.csv
-  docs/
-    EXEC_MEMO.md
-    MONITORING_PLAN.md
-    DATA_DICTIONARY.md
-  notebooks/
-    01_margin_waterfall.ipynb
-    02_scenario_model.ipynb
-  src/
-    generate_synthetic_data.py
-    analysis_margin.py
-    scenario_model.py
-  requirements.txt
-```
+## Quantitative Methodology
+The analysis utilizes **Monte Carlo simulations** (10,000 iterations) to define the breakeven request volume and revenue floor required to hit a 44% CM% benchmark while protecting the **89.2% Travel SLA**.
 
-## How to run
-```bash
-python -m venv .venv && source .venv/bin/activate  # windows: .venv\Scripts\activate
-pip install -r requirements.txt
-python src/generate_synthetic_data.py
-jupyter notebook
-```
+## Strategic Recommendation (30/60/90 Plan)
+1. **30 Days**: Deploy weekly economics scorecard via automated Python/SQL triggers.
+2. **60 Days**: Pilot pricing levers (Option A) and SLA stabilization protocols (Option C).
+3. **90 Days**: Scale winning optimizations to capture the 6pp margin delta.
+
+---
+**Author**: Brian Penrod, DBA  
+**Target Role**: Sr. Business Manager, Concierge Economics
