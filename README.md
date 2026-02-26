@@ -17,6 +17,14 @@ The analysis utilizes **Monte Carlo simulations** (10,000 iterations) to define 
 2. **60 Days**: Pilot pricing levers (Option A) and SLA stabilization protocols (Option C).
 3. **90 Days**: Scale winning optimizations to capture the 6pp margin delta.
 
+## Strategic Visualizations
+### 12-Month Margin Projections
+![Scenario Comparison](viz/scenario_comparison.png)
+
+### Annual Profit Distribution (Monte Carlo)
+![Profit Distribution](viz/concierge_profit_distribution.png)
+
 ---
 **Author**: Brian Penrod, DBA  
 **Target Role**: Sr. Business Manager, Concierge Economics
+
